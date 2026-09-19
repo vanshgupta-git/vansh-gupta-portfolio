@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Moirai+One&family=Mouse+Memoirs&family=Poppins:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-hero: "Bagel Fat One", system-ui;
+  --font-text: "Poppins", sans-serif;
+  --font-end-name: "Moirai One", system-ui;
+  --font-tech-stack: "Mouse Memoirs", sans-serif;
+}
+.hov:hover{
+  width: width+10;
+}
+
+body{
+  background-color: white;
+  padding: 2;
+  
+  background-image:
+    linear-gradient(
+      rgba(56, 191, 248, 0.164) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(56, 191, 248, 0.098) 1px,
+      transparent 1px
+    );
+
+  background-size: 40px 40px;
+}
+
