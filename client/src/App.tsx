@@ -1,28 +1,55 @@
-import Navbar from './components/layout/Navbar'
-import About from './components/sections/About'
-import Hero from './components/sections/Hero'
+import MarqueeStrip from "./components/layout/MarqueeStrip";
+import Navbar from "./components/layout/Navbar";
+import About from "./components/sections/About";
+import Hero from "./components/sections/Hero";
+import WorkingProcess from "./components/sections/WorkingProcess";
 
 const App = () => {
   return (
     <div>
+      {/* Sticky Navbar */}
+      <header className="sticky top-2 z-50 flex justify-center">
+        <Navbar />
+      </header>
 
-<header className='flex justify-center sticky top-2'>
-
-      <Navbar />
-</header>
-
-      <main >
-        <section id="home" className="min-h-screen p-5">
+      <main>
+        {/* Hero */}
+        <section
+          id="home"
+          className="relative min-h-screen p-5"
+        >
           <Hero />
+
+          {/* Overlapping Marquee */}
+          <div className="absolute bottom-0 left-1/2 z-20 w-[115%] -translate-x-1/2 translate-y-1/2">
+            <MarqueeStrip />
+          </div>
         </section>
 
-        <section id="about" className="min-h-screen bg-sky-100 p-5">
+        {/* About */}
+        <section
+          id="about"
+          className="
+            min-h-screen
+            bg-sky-100
+            p-5
+            bg-[radial-gradient(circle,#cbd5e1_1.3px,transparent_1px)]
+            bg-[size:40px_40px]
+          "
+        >
           <About />
         </section>
+
+        {/* Working Process */}
+        <section
+          id="working-process"
+          className="min-h-screen bg-black"
+        >
+          <WorkingProcess />
+        </section>
       </main>
-
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

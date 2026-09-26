@@ -1,4 +1,11 @@
 const Navbar = () => {
+
+
+  // 2. Define the click handler to toggle the state
+  const resume = () => {
+    window.location.href = 'https://drive.google.com/file/d/1GFWxi6btyMEXcnGvyPeneTrK4seHi0u3/view?usp=sharing';
+  };
+
   return (
     <header className='flex justify-between items-center w-4/5  bg-white shadow-md py-3 px-4 lg:px-8 rounded-3xl sticky top-2'>
 
@@ -16,8 +23,8 @@ const Navbar = () => {
       </ul>
 
       <div className='flex gap-2 items-center'>
-        <button className='bg-transparent rounded-full px-4 py-2 text-gray-900  border border-gray-300'>Resume</button>
-        <button className='bg-black rounded-full px-4 py-2 text-white border border-black'>Contact Me</button>
+        <button className='bg-transparent rounded-full px-4 py-2 text-gray-900  border border-gray-300 cursor-pointer' onClick={resume}>Resume</button>
+        <button className='bg-black rounded-full px-4 py-2 text-white border border-black cursor-pointer'>Contact Me</button>
       </div>
 
     </header>
