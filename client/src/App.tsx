@@ -1,7 +1,10 @@
 import MarqueeStrip from "./components/layout/MarqueeStrip";
 import Navbar from "./components/layout/Navbar";
 import About from "./components/sections/About";
+import GithubStats from "./components/sections/GithubStats";
 import Hero from "./components/sections/Hero";
+import Projects from "./components/sections/Projects";
+import Skills from "./components/sections/Skills";
 import WorkingProcess from "./components/sections/WorkingProcess";
 
 const App = () => {
@@ -46,6 +49,24 @@ const App = () => {
           className="min-h-screen bg-black"
         >
           <WorkingProcess />
+        </section>
+
+        {/* Project */}
+        <section id="working-process"
+          className="min-h-screen bg-white">
+          <Projects />
+        </section>
+
+        {/* Github Stats */}
+        <section id="github-stats"
+        className="min-h-screen">
+          <GithubStats />
+        </section>
+
+        {/* Skills */}
+        <section id="skills"
+        className="min-h-screen bg-white">
+          <Skills />
         </section>
       </main>
     </div>

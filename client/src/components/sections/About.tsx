@@ -1,7 +1,11 @@
+import SectionHeading from "../ui/SectionHeading"
+
 const About = () => {
     return (
         <div className="p-10" >
-            <h1 className="font-hero w-200 text-7xl px-8 m-8 mx-3">About Me</h1>
+            <SectionHeading className="w-200 px-8 m-8 mx-3">
+                ABOUT
+            </SectionHeading>
             <div className="">
                 <p className="text-xl px-25 mt-5">I'm a third-year Computer Science undergraduate at RKGIT, Ghaziabad, and a full-stack web developer currently interning with the IT & Digital Operations team at Gift a Smile Foundation (NIVA). My focus is on building practical, user-friendly web applications — from internal admin tools to campus-safety products — using React and TypeScript.</p>
                 <div className="flex px-15 mt-10 justify-around">

@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react"
+import SectionHeading from "../ui/SectionHeading"
 
 const Hero = () => {
   return (
@@ -6,7 +7,10 @@ const Hero = () => {
       <div className="flex justify-center items-center gap-5 px-8 m-6 mx-3">
         <div className="flex flex-col justify-around gap-10">
 
-          <h1 className="font-hero w-200 text-7xl">CREATIVE WEB -DEVELOPER</h1>
+          <SectionHeading className="">
+            
+             CREATIVE WEB -DEVELOPER
+            </SectionHeading>
           <p className="font-text text-lg w-150 ">Third-year CSE student turning code into real products — full-stack builds with React and Node, sharpened by a steady grind on DSA.</p>
           <a className="flex justify-between items-center bg-black rounded-full px-5 py-3 w-38 text-white text-lg border border-black" href="#About">About Me<ArrowRight /></a>
         </div>
