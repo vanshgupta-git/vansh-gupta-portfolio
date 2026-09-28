@@ -1,3 +1,5 @@
+import Button from "../ui/Button";
+
 const Navbar = () => {
 
 
@@ -23,8 +25,13 @@ const Navbar = () => {
       </ul>
 
       <div className='flex gap-2 items-center'>
-        <button className='bg-transparent rounded-full px-4 py-2 text-gray-900  border border-gray-300 cursor-pointer' onClick={resume}>Resume</button>
-        <button className='bg-black rounded-full px-4 py-2 text-white border border-black cursor-pointer'>Contact Me</button>
+        <Button
+         title="Resume" 
+         className="text-black px-4 py-2" 
+         onClick={resume}
+          />
+        <button
+         className='bg-black rounded-full px-4 py-2 text-white border border-black cursor-pointer'>Contact Me</button>
       </div>
 
     </header>

@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react"
 import SectionHeading from "../ui/SectionHeading"
+import Button from "../ui/Button"
 
 const Hero = () => {
   return (
@@ -12,7 +13,10 @@ const Hero = () => {
              CREATIVE WEB -DEVELOPER
             </SectionHeading>
           <p className="font-text text-lg w-150 ">Third-year CSE student turning code into real products — full-stack builds with React and Node, sharpened by a steady grind on DSA.</p>
-          <a className="flex justify-between items-center bg-black rounded-full px-5 py-3 w-38 text-white text-lg border border-black" href="#About">About Me<ArrowRight /></a>
+<Button
+  title="About Me"
+  className="bg-black hover:bg-gray-800 w-38 px-5 py-3 text-lg text-white transition"
+/>
         </div>
         <div className="relative w-90 h-100 group">
           <img
